@@ -11,6 +11,9 @@ repositories {
 jar {
     baseName = 'gs-gradle'
     version =  '0.1.0'
+	manifest {
+		attributes("Main-Class" : "HelloWorld")
+	}
 }
 // end::jar[]
 
@@ -25,3 +28,4 @@ task wrapper(type: Wrapper) {
     gradleVersion = '1.11'
 }
 // end::wrapper[]
+
